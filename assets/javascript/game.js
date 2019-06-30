@@ -34,7 +34,7 @@ function psychicGame () {
             if (input === randomLetter)
             {
                 wins++;
-                Guesses.push(input)
+                Guesses.push(input);
                 document.getElementById("wins").innerHTML = "Wins: "+wins; 
                 document.getElementById("losses").innerHTML = "Losses: "+losses;  
                 document.getElementById("guesses-left").innerHTML = "Guesses Left: "+guessesLeft;
@@ -59,6 +59,7 @@ function psychicGame () {
                     document.getElementById("guesses-so-far").innerHTML = "Your Guesses so far: "+Guesses;
                 }
                else {
+                    Guesses.push(input);
                     document.getElementById("wins").innerHTML = "Wins: "+wins; 
                     document.getElementById("losses").innerHTML = "Losses: "+losses;  
                     document.getElementById("guesses-left").innerHTML = "Guesses Left: "+guessesLeft;
